@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <img src="logo-inventory.png" alt="User Image" class="logo">
+            <nav>
+                <ul>
+                    <li><span><i class="fa fa-dashboard"></i></span><a href="#">Dashboard</a></li>
+                    <li><span><i class="fa fa-product-hunt"></i></span><a href="#">Products</a></li>
+                    <li><span><i class="fa fa-cogs"></i></span><a href="#">Widgets</a></li>
+                    <li><span><i class="fa fa-desktop"></i></span><a href="#">UI Elements</a></li>
+                    <li><span><i class="fa fa-files-o"></i></span><a href="#">Pages</a></li>
+                    <li><span><i class="fa fa-calendar"></i></span><a href="#">Calendars</a></li>
+                    <li><span><i class="fa fa-edit"></i></span><a href="#">Forms</a></li>
+                    <li><span><i class="fa fa-table"></i></span><a href="#">Tables</a></li>
+                    <li><span><i class="fa fa-bar-chart"></i></span><a href="#">Graphs</a></li>
+                    <li><span><i class="fa fa-columns"></i></span><a href="#">Layouts</a></li>
+                    <li><span><i class="fa fa-lock"></i></span><a href="#">Authentication</a></li>
+                    <li><span><i class="fa fa-link"></i></span><a href="#">Link</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="navigation">
+                    <div class="breadcrumb-path">
+                        <span class="breadcrumb-icon">&#x2302;</span>
+                        <a href="#">Home</a>
+                        <span class="breadcrumb-separator">&#8250;</span>
+                        <a href="#">product</a>
+                        <span class="breadcrumb-separator">&#8250;</span>
+                        <a href="#">orders</a>
+                    </div>
+                
+                <div class="profile">
+                    <img src="person.png" alt="profile picture" class="profile-picture">
+                    <span class="profile-name">John Kaisen</span>
+                </div>
+            </div>
+            <div class="order-history">
+
+                <h2>Order History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>customer</th>
+                            <th>Product</th>
+                            <th>user ID</th>
+                            <th>Order placed</th>
+                            <th>amount</th>
+                            <th>payment status</th>
+                            <th>order status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="person.png" alt="">John Doe</td>
+                            <td><img src="laptop.jpg" alt="">Laptop</td>
+                            <td>1001</td>
+                            <td>2024-01-15</td>
+                            <td>$999.00</td>
+                            <td class="paid"> &#10003; Paid</td>
+                            <td>
+                                <p class="paid-box">
+                                    Delivered
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Jane Smith</td>
+                            <td><img src="mouse.jpg" alt="">Mouse</td>
+                            <td>1002</td>
+                            <td>2024-01-16</td>
+                            <td>$25.00</td>
+
+                            <td class="failed">&#10007; Failed</td>
+                            <td>
+                                <p class="failed-box">
+                                    Cancelled
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Mike Johnson</td>
+                            <td><img src="keyboard.jpg" alt="">Keyboard</td>
+                            <td>1003</td>
+                            <td>2024-01-17</td>
+                            <td>$75.00</td>
+
+                            <td class="paid"> &#10003; Paid</td>
+                            <td>
+                                <p class="paid-box">
+                                    Delivered
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Sarah Williams</td>
+                            <td><img src="mouse.jpg" alt="">mouse</td>
+                            <td>1004</td>
+                            <td>2024-01-18</td>
+                            <td>$299.00</td>
+                            <td class="awaiting"><i style="font-size:20px" class="fa">&#xf017;</i> Awaiting</td>
+                            <td>
+                                <p class="awaiting-box">
+                                    Processing
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Tom Brown</td>
+                            <td><img src="laptop.jpg" alt="">laptop</td>
+                            <td>1005</td>
+                            <td>2024-01-19</td>
+                            <td>$150.00</td>
+                            <td class="awaiting"><i style="font-size:20px" class="fa">&#xf017;</i> Awaiting</td>
+                            <td>
+                                <p class="awaiting-box">
+                                    Processing
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Emily Davis</td>
+                            <td><img src="keyboard.jpg" alt="">Keyboard</td>
+                            <td>1006</td>
+                            <td>2024-01-20</td>
+                            <td>$80.00</td>
+
+                            <td class="failed">&#10007; Failed</td>
+                            <td>
+                                <p class="failed-box">
+                                    Cancelled
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Chris Martinez</td>
+                            <td><img src="laptop.jpg" alt="">laptop</td>
+                            <td>1007</td>
+                            <td>2024-01-21</td>
+                            <td>$45.00</td>
+                            <td class="paid"> &#10003; Paid</td>
+                            <td>
+                                <p class="paid-box">
+                                    Delivered
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="person.png" alt="">Lisa Anderson</td>
+                            <td><img src="mouse.jpg" alt="">mouse</td>
+                            <td>1008</td>
+                            <td>2024-01-22</td>
+                            <td>$60.00</td>
+
+                            <td class="failed">&#10007; Failed</td>
+                            <td>
+                                <p class="failed-box">
+                                    Cancelled
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

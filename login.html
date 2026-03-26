@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h4>Welcome back, </h4>
+        <h2>Login to your Admin Account</h2>
+        <form action="#">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" >
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'admin') {
+                alert('Login successful!');
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
